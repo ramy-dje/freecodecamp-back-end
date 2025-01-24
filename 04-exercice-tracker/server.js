@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 main().catch(err => console.log(err))
 
 async function main() {
-    await mongoose.connect(process.env.DB_URI)
+    await mongoose.connect("mongodb+srv://ramyromirso:3X2M4c0VjA7lxuFe@cluster0.qydxh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 }
 
 const userSchema = new Schema({
