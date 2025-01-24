@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 // Basic Configuration
 try {
-    mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+    mongoose.connect("mongodb+srv://ramyromirso:3X2M4c0VjA7lxuFe@cluster0.qydxh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", { useNewUrlParser: true, useUnifiedTopology: true });
 } catch (err) {
     console.log(err)
 }
